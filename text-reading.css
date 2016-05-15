@@ -1,0 +1,88 @@
+* {
+	-webkit-font-smoothing: antialiased !important;
+	-webkit-print-color-adjust: exact;
+}
+body {
+	font-family: 'Open Sans';
+	color: rgb(51, 51, 51);
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 1.6;
+	background-color: white;
+	padding: 10px 10% 10px 10%;
+}
+pre, code {
+	font-family: 'Source Code Pro';
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	font-size: 12px;
+	line-height: 19px;
+	overflow: auto;
+	border-radius: 3px;
+}
+pre code, pre tt {
+	background-color: transparent;
+	border: none;
+}
+pre {
+	padding: 6px 10px;
+}
+code {
+	padding: 0 3px 0 3px;
+	margin: 0 2px 0 2px;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+p {
+	text-align: justify; 
+}
+a {
+	color: #3A89D3;
+}
+blockquote {
+	border-left: 4px solid #dddddd;
+	padding: 0 15px;
+	color: #777777;
+}
+table {
+	padding: 0;
+	border-collapse: collapse;
+	border: 1px solid #cccccc;
+	border-radius: 3px; /* Sadly, this does not seem to work */
+}
+table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+th, table tr:nth-child(2n) {
+      background-color: #f8f8f8;
+}
+h1 a {
+	text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	line-height: 95%;
+}
+
+/*
+	Automatic counting of headingss, taken from Phil Archer 
+	http://philarcher.org/diary/2013/headingnumbers/
+*/
+body {counter-reset: h2}
+  h2 {counter-reset: h3}
+  h3 {counter-reset: h4}
+  h4 {counter-reset: h5}
+  h5 {counter-reset: h6}
+
+  h2:before {counter-increment: h2; content: counter(h2) ". "}
+  h3:before {counter-increment: h3; content: counter(h2) "." counter(h3) ". "}
+  h4:before {counter-increment: h4; content: counter(h2) "." counter(h3) "." counter(h4) ". "}
+  h5:before {counter-increment: h5; content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) ". "}
+  h6:before {counter-increment: h6; content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) ". "}
+
+  h2.nocount:before, h3.nocount:before, h4.nocount:before, h5.nocount:before, h6.nocount:before { content: ""; counter-increment: none } 
