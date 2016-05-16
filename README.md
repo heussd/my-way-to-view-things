@@ -1,4 +1,4 @@
-# my-way-to-see-things
+# my-way-to-view-things
 
 This repository contains a fine-tuned CSS style that I personally like to use to view things. "Things" primarily include Markdown documents in [MacDown](http://macdown.uranusjr.com/) and RSS news in [Vienna](http://www.vienna-rss.org).
 

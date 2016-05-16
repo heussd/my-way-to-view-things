@@ -59,6 +59,12 @@ table tr {
     margin: 0;
     padding: 0;
 }
+table td, table th {
+	border: 1px solid #cccccc;
+}
+table td {
+	padding: 0 5px 0 5px;
+}
 th, table tr:nth-child(2n) {
       background-color: #f8f8f8;
 }
