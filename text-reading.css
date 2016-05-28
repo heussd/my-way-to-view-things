@@ -68,7 +68,40 @@ h1 a {
 	text-decoration: none;
 }
 h1, h2, h3, h4, h5, h6 {
-	line-height: 95%;
+	line-height: 97%;
+}
+
+h1 {
+	margin: 10px auto 30px auto;
+	width: 80%;
+	text-align: center;
+}
+
+/*
+	Special Highlighting for h2s
+	slightly modified from https://stackoverflow.com/questions/21317112/h2-set-background-color-and-underline#21317280
+*/
+h2{
+  border-bottom: 2px solid rgb(51, 51, 51);
+  background:rgb(51, 51, 51);
+  color:#fff;
+  display:inline-block;
+  padding:3px 15px;
+}
+h2:after{
+  left:0px;
+  display:block;
+  position:absolute;
+  width:100%;
+  height:3px;
+  margin-top:2px;
+  content: " ";
+  background:rgb(51, 51, 51);
+}
+
+h2, h3, h4, h5, h6 {
+	margin-left: -30px;
+	margin-top: 20px;
 }
 
 /*
@@ -88,3 +121,4 @@ body {counter-reset: h2}
   h6:before {counter-increment: h6; content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) ". "}
 
   h2.nocount:before, h3.nocount:before, h4.nocount:before, h5.nocount:before, h6.nocount:before { content: ""; counter-increment: none } 
+
