@@ -10,7 +10,7 @@ if [ -e "${HOME}/Library/Application Support/Vienna/Styles/" ]; then
 	cp vienna/template.html "$viennastyle/"
 	cp text-reading.css "$viennastyle/stylesheet.css"
 	open "$viennastyle"
-	rm -R "$viennastyle"
+	#rm -R "$viennastyle"
 fi
 
 if [ -e "${HOME}/Library/Application Support/MacDown/Styles/" ]; then
