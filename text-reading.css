@@ -12,6 +12,13 @@ body {
 	background-color: white;
 	padding: 10px 10% 10px 10%;
 }
+/* Text and background color for dark mode, taken from https://paulmillr.com/posts/using-dark-mode-in-css/*/
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #ddd;
+    background-color: #222;
+  }
+}
 pre, code {
 	font-family: 'Source Code Pro';
 	background-color: #f8f8f8;
