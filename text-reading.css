@@ -12,13 +12,6 @@ body {
 	background-color: white;
 	padding: 10px 10% 10px 10%;
 }
-/* Text and background color for dark mode, taken from https://paulmillr.com/posts/using-dark-mode-in-css/*/
-@media (prefers-color-scheme: dark) {
-  body {
-    color: #ddd;
-    background-color: #222;
-  }
-}
 pre, code {
 	font-family: 'Source Code Pro';
 	background-color: #f8f8f8;
@@ -90,8 +83,8 @@ h1 {
 	slightly modified from https://stackoverflow.com/questions/21317112/h2-set-background-color-and-underline#21317280
 */
 h2{
-  border-bottom: 2px solid rgb(51, 51, 51);
-  background:rgb(51, 51, 51);
+  border-bottom: 2px solid #606060;
+  background: #606060;
   color:#fff;
   display:inline-block;
   padding:3px 15px;
@@ -101,10 +94,10 @@ h2:after{
   display:block;
   position:absolute;
   width:100%;
-  height:3px;
+  height:6px;
   margin-top:2px;
   content: " ";
-  background:rgb(51, 51, 51);
+  background: #606060;
 }
 
 h2, h3, h4, h5, h6 {
@@ -129,3 +122,21 @@ body {counter-reset: h2}
   h6:before {counter-increment: h6; content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) ". "}
 
   h2.nocount:before, h3.nocount:before, h4.nocount:before, h5.nocount:before, h6.nocount:before { content: ""; counter-increment: none }
+
+
+/*
+	Dark Mode Overwrites
+	Inspired by https://paulmillr.com/posts/using-dark-mode-in-css/
+*/
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #ddd;
+    background-color: #222;
+  }
+  blockquote {
+	border-color: #606060;
+  }
+  pre {
+  	background-color: #606060;
+  }
+}
