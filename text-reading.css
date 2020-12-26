@@ -1,5 +1,6 @@
 * {
 	-moz-osx-font-smoothing: grayscale !important;
+	-webkit-font-smoothing: antialiased !important;
 }
 @font-face {
 	font-family: 'Open Sans';
