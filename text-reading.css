@@ -1,9 +1,21 @@
 * {
-	-webkit-font-smoothing: antialiased !important;
-	-webkit-print-color-adjust: exact;
+	-moz-osx-font-smoothing: grayscale !important;
 }
-body {
+@font-face {
 	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Open Sans'), local('OpenSans');
+}
+@font-face {
+	font-family: 'Source Code Pro';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Source Code Pro'), local('SourceCodePro');
+}
+
+body {
+	font-family: "Open Sans";
 	color: rgb(51, 51, 51);
 	font-style: normal;
 	font-weight: normal;
@@ -13,13 +25,14 @@ body {
 	padding: 10px 10% 10px 10%;
 }
 pre, code {
-	font-family: 'Source Code Pro';
+	font-family: "Source Code Pro";
 	background-color: #f8f8f8;
 	border: 1px solid #cccccc;
 	font-size: 12px;
 	line-height: 19px;
 	overflow: auto;
 	border-radius: 3px;
+	padding: 0 3px 0 3px;
 }
 pre code, pre tt {
 	background-color: transparent;
@@ -138,5 +151,8 @@ body {counter-reset: h2}
   }
   pre {
   	background-color: #606060;
+  }
+  code {
+	  color: black;
   }
 }
