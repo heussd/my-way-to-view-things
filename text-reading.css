@@ -148,12 +148,17 @@ body {counter-reset: h2}
     background-color: #222;
   }
   blockquote {
-	border-color: #606060;
+	border-color: #5c5c5c;
   }
   pre {
-  	background-color: #606060;
+	background-color: #5c5c5c;
+	border: 0px;
+	padding: 5px;
   }
   code {
 	  color: black;
+	  background-color: #5c5c5c;
+	  border: 0px;
+	  padding: 5px;
   }
 }
