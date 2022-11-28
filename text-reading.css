@@ -148,7 +148,7 @@ body {counter-reset: h2}
 */
 @media (prefers-color-scheme: dark) {
   body {
-    color: #ddd;
+    color: rgb(202, 202, 202);
     background-color: #222;
   }
   blockquote {
@@ -156,20 +156,23 @@ body {counter-reset: h2}
   }
   pre {
 	background-color: #5c5c5c;
-	 border: 1px solid #C0C0C0;
+	 border: 1px solid #7f7f7f;
 	padding: 5px;
   }
   code {
 	  color: black;
 	  background-color: #5c5c5c;
-	  border: 1px solid #C0C0C0;
-	  padding: 5px;
+	  border: 1px solid #7f7f7f;
+	  padding: 3px;
   }
 
+  table, th, td {
+	border: 1px solid #7f7f7f !important;
+  }
   table tr {
   	  background: transparent;
   }
   th, table tr:nth-child(2n) {
-      background-color: #171D1D;
+      background-color: rgb(50, 50, 50);
   }
 }
