@@ -9,10 +9,10 @@
 	src: local('Open Sans'), local('OpenSans');
 }
 @font-face {
-	font-family: 'Source Code Pro';
+	font-family: 'SauceCodePro Nerd Font';
 	font-style: normal;
 	font-weight: 400;
-	src: local('Source Code Pro'), local('SourceCodePro');
+	src: local('SauceCodePro Nerd Font'), local('SauceCodePro');
 }
 
 body {
@@ -26,7 +26,7 @@ body {
 	padding: 10px 10% 10px 10%;
 }
 pre, code {
-	font-family: "Source Code Pro";
+	font-family: "SauceCodePro Nerd Font";
 	background-color: #f8f8f8;
 	border: 1px solid #cccccc;
 	font-size: 12px;
@@ -152,13 +152,13 @@ body {counter-reset: h2}
   }
   pre {
 	background-color: #5c5c5c;
-	border: 0px;
+	 border: 1px solid #C0C0C0;
 	padding: 5px;
   }
   code {
 	  color: black;
 	  background-color: #5c5c5c;
-	  border: 0px;
+	  border: 1px solid #C0C0C0;
 	  padding: 5px;
   }
 }
