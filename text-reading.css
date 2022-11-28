@@ -63,6 +63,10 @@ table {
 	border-collapse: collapse;
 	border: 1px solid #cccccc;
 	border-radius: 3px; /* Sadly, this does not seem to work */
+	margin: 10px auto 10px auto;
+}
+table th, td {
+	padding: 10px;
 }
 table tr {
     border-top: 1px solid #cccccc;
@@ -160,5 +164,12 @@ body {counter-reset: h2}
 	  background-color: #5c5c5c;
 	  border: 1px solid #C0C0C0;
 	  padding: 5px;
+  }
+
+  table tr {
+  	  background: transparent;
+  }
+  th, table tr:nth-child(2n) {
+      background-color: #171D1D;
   }
 }
